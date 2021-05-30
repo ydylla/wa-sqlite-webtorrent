@@ -1,0 +1,28 @@
+{
+  "name": "wa-sqlite-webtorrent",
+  "description": "WebTorrent based VFS for wa-sqlite",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "repository": "https://github.com/ydylla/wa-sqlite-webtorrent",
+  "author": "Yannick Dylla",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "files": [
+    "dist/*",
+    "src/*"
+  ],
+  "dependencies": {
+    "wa-sqlite-base": "https://github.com/ydylla/wa-sqlite-base.git"
+  },
+  "devDependencies": {
+    "@types/webtorrent": "^0.109.0",
+    "typescript": "^4.0.0"
+  }
+}
